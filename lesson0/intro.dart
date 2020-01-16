@@ -12,6 +12,8 @@ void main() {
 /// ### 2) Basic Types & Strict typing
 ///
 /// Dart is strictly-typed: all variables, properties, and even return values all have a fixed type.
+/// 
+/// More info: https://dart.dev/guides/language/sound-dart
 
 void two() {
   String name = 'hi';
