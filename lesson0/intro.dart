@@ -137,7 +137,7 @@ void five() {
   print(anotherFunction(2.0));
 
   /// Assigning an anonymous function to a variable.
-  /// Anonymous functions can be used directly in parameters that accept functions.
+  /// Anonymous functions can be uszed directly in parameters that accept functions.
   final thirdFunction = (double value) => value * 2;
   assert(thirdFunction is DoubleCallback);
 }

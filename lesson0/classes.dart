@@ -223,7 +223,8 @@ class Tuple<A, B> {
   final B second;
   const Tuple(this.first, this.second);
 
-  /// Operator methods
+  /// Operator methods. Override equality to check for equality of instance variables instead.
+  /// Default equality only checks for equality of reference, i.e. `identical(this, other)`
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
@@ -238,7 +239,7 @@ class Tuple<A, B> {
   }
 
   /// There is also a need to override the [hashCode] getter,
-  /// after overriding the [==] operator, and vice versa.
+  /// after overriding the [==] operator, and vice versa, to match the logic.
   @override
   int get hashCode => 997 * first.hashCode ^ 991 * second.hashCode;
 }

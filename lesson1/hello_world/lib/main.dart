@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
+/// Every Dart program first runs the main function
+/// Every Flutter app needs to run the `runApp` function,
+/// which accepts any [Widget] as its argument.
 void main() => runApp(MyApp());
 
+/// Create custom widgets by extending [StatelessWidget] or [StatefulWidget]
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    /// The first widget that gets build is usually a [MaterialApp]
     return MaterialApp(
       title: 'Hello World',
       theme: ThemeData(
